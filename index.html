@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="icon" href="img/favicon.ico">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>lesson_11</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <ul class="header__menu menu">
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Пункт меню1</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Пункт меню2</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Пункт меню3</a>
+                  <ul class="sub-menu">
+                     <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">подпункт1</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">подпункт2</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">подпункт3</a>
+                     </li>
+                     <li class="sub-menu__item">
+                        <a href="" class="sub-menu__link">подпункт4</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__link">Пункт меню4</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <div class="absolute">
+               <div class="absolute__relative">
+                  <h3>absolute</h3>
+                  <p>absolute - абсолютне (безумовне) позиціонування</p>
+                  1) Разом з position: absolute; обов'язково використовуйте
+                  властивості для позіціанування ( <a href="#" class="left">left</a>,
+                  <a href="#" class="top">top</a>,
+                  <a href="#" class="right">right</a>,
+                  <a href="#" class="bottom">bottom</a>) <br>
+                  2) Об'єкт позіціонується відносно <a href="#" class="relative">першого батьківського елементу</a>,
+                  position якого відмінний від static. <br>
+                  3) Об'єкт втрачає свою <a href="#" class="top">блочну</a> сутність. Також <a href="#"
+                     class="bottom">втрачає</a> своє <a href="#" class="right">положення</a> в
+                  коді,
+                  та <a href="#" class="left">простір</a> який він займав
+                  <div class="absolute__static">static</div>
+                  <div class="absolute__left">block1</div>
+                  <div class="absolute__top">block2</div>
+                  <div class="absolute__right">block3</div>
+                  <div class="absolute__bottom">block4</div>
+               </div>
+            </div>
+            <div class="sticky">
+               <div class="sticky__text">
+                  <h3>sticky</h3>
+                  <p>
+                     sticky - Це гібридне поєднання значень static та fixed.
+                     Спочатку елемент веде себе як static але після того
+                     як скролл доходить до його кордону він стає
+                     fixed та прилипає до зазначеної позиції top або bottom.
+                     !!! Не працює, якщо у батькіских об'єктах присутній
+                     overflow: hidden;
+                  </p>
+               </div>
+               <div class="sticky__blocks ">
+                  <div class="sticky__block1">block1</div>
+                  <div class="sticky__block2">block2</div>
+                  <div class="sticky__block3">block3</div>
+                  <div class="sticky__block4">block4</div>
+               </div>
+            </div>
+            <div class="index">
+               <h3>z-index</h3>
+               <p>z-index - управляє положенням об'єкту по осі Z
+                  auto - ближчим буде об'єкт який нижче по коду</p>
+               <div class="index__block1">block1</div>
+               <div class="index__block2">block2</div>
+               <div class="index__block3">block3</div>
+               <div class="index__block4">block4</div>
+            </div>
+            <div class="car-view">
+               <div class="car">
+                  <div class="car__triangle-left"></div>
+                  <div class="car__rectangle1"></div>
+                  <div class="car__rectangle2"></div>
+                  <div class="car__rectangle3"></div>
+                  <div class="car__trapezoid">
+                     <div class="girl">
+                        <div class="girl__rectangle1"></div>
+                        <div class="girl__rectangle2"></div>
+                        <img src="img/girl.png" alt="girl">
+                     </div>
+                  </div>
+                  <div class="car__rectangle4"></div>
+                  <div class="car__triangle-right"></div>
+                  <div class="car__circle1"></div>
+                  <div class="car__circle2"></div>
+               </div>
+            </div>
+            <div class="why-createx">
+               <ul class="list">
+                  <li class="list__item">
+                     A fermentum in morbi pretium aliquam adipiscing donec tempus.
+                  </li>
+                  <li class="list__item">
+                     Vulputate placerat amet pulvinar lorem nisl.
+                  </li>
+                  <li class="list__item">
+                     Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.
+                  </li>
+                  <li class="list__item">
+                     Etiam duis lobortis in fames ultrices commodo nibh.
+                  </li>
+                  <li class="list__item">
+                     Tincidunt sagittis neque sem ac eget.
+                  </li>
+                  <li class="list__item">
+                     Ultricies amet justo et eget quisque purus vulputate dapibus tortor.
+                  </li>
+               </ul>
+            </div>
+            <div class="meet">
+               <div class="item">
+                  <div class="item__image">
+                     <img src="img/meet/image.jpg" alt="girl">
+                     <img class="item__gradient" src="img/meet/gradient.png" alt="gradient">
+                     <ul class="item__list">
+                        <li>
+                           <a href="" class="item__icon-face">
+                              <img src="img/meet/facebook.svg" alt="icon">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="" class="item__icon-insta">
+                              <img src="img/meet/instagram.svg" alt="icon">
+                           </a>
+                        </li>
+                        <li>
+                           <a href="" class="item__icon-linkdn">
+                              <img src="img/meet/linked-in.svg" alt="icon">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="item__name">Dianne Russell</div>
+                  <div class="item__position">Founder and CEO</div>
+               </div>
+            </div>
+            <div class="latest">
+               <div class="latest__item">
+                  <div class="latest__item-image">
+                     <img src="img/latest/image.jpg" alt="head">
+                     <a href="#" class="latest__item-link">Podcast</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+</body>
+
+</html>
